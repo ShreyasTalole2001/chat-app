@@ -1,0 +1,71 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
+
+
+
+body{
+    font-family: 'Roboto', sans-serif;
+}
+
+.chatBox--wrapper{
+    width: 800px;
+    max-width: 90%;
+    border: 1px solid black;
+    /* height: 500px; */
+    margin: 0px auto;
+    padding: 0px;
+    background-image: url('./images/1288076.webp');
+    background-repeat: no-repeat;
+    background-size: cover;
+
+}
+
+.header{
+    background-color:black;
+    padding: 1px;
+    padding-left: 20px;
+    color: aliceblue;
+}
+
+.message--area{
+    height: 350px;
+    padding: 16px;
+    display: flex;
+    flex-direction: column;
+    overflow-y: auto;
+    padding-top: 40px;
+}
+
+textarea{
+    width: 90%;
+    border: none;
+    padding: 20px;
+    font-size: 16px;
+    outline: none;
+    background: #FBFBFB;
+}
+
+.message{
+    padding: 5px 10px;
+    border-radius: 4px;
+    margin-bottom: 40px;
+    max-width: 300px;
+    position: relative;
+}
+
+.incomming{
+    background-color: #8f8be8;
+    display: #fff;
+}
+
+.outgoing{
+    background-color: #e9eafd;
+    display: #fff;
+    margin-left: auto;
+}
+
+.message h4{
+    padding: 0px;
+    margin: 0px;
+    color: #333;
+    font-size: 14px;
+}
