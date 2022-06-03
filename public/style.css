@@ -4,30 +4,52 @@
 
 body{
     font-family: 'Roboto', sans-serif;
+    background-color: #222A2F;
+    
+}
+
+html {
+    scroll-behavior: smooth;
 }
 
 .chatBox--wrapper{
     width: 800px;
-    max-width: 90%;
+
     border: 1px solid black;
-    /* height: 500px; */
+   
     margin: 0px auto;
-    padding: 0px;
-    background-image: url('./images/1288076.webp');
-    background-repeat: no-repeat;
-    background-size: cover;
+    background-image: url('./images/2.jpg');
+    background-position: center;
+    background-repeat: repeat;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    /* padding: 10px; */
+    opacity: 0.9;
+    position: relative;
 
 }
+
+@media only screen and (max-width: 600px) {
+    .chatBox--wrapper {
+        height: 100vh;
+        max-width: 100%;
+    }
+  }
 
 .header{
     background-color:black;
     padding: 1px;
-    padding-left: 20px;
+    width: 100%;
     color: aliceblue;
 }
 
+.header img{
+    margin-left: 20px;
+    width: 50px;
+    padding: 10px;
+}
+
 .message--area{
-    height: 350px;
+    height: 60vh;
     padding: 16px;
     display: flex;
     flex-direction: column;
@@ -35,13 +57,28 @@ body{
     padding-top: 40px;
 }
 
+#textarea--wrapper{
+    margin: 0px auto;
+     width: 100%;
+     background-color: #1E2428;
+}
+
 textarea{
-    width: 90%;
+   width: 100%;
+   
     border: none;
-    padding: 20px;
+    
     font-size: 16px;
     outline: none;
-    background: #FBFBFB;
+    background: #1E2428;
+    resize: none;
+    color: white;
+    margin: 0px auto;
+    position: absolute; left: 0; width: 100%; bottom: 0;
+
+
+    
+    
 }
 
 .message{
@@ -50,11 +87,14 @@ textarea{
     margin-bottom: 40px;
     max-width: 300px;
     position: relative;
+    text-align: justify;
 }
 
 .incomming{
     background-color: #8f8be8;
     display: #fff;
+    color: #e9eafd;
+
 }
 
 .outgoing{
@@ -68,4 +108,32 @@ textarea{
     margin: 0px;
     color: #333;
     font-size: 14px;
+    /* background-color: #333;
+    color: #e9eafd; */
+    /* text-align: center; */
 }
+
+
+
+::placeholder { /* Chrome, Firefox, Opera, Safari 10.1+ */
+    color: white;
+    opacity: 1; /* Firefox */
+  }
+
+  ::-webkit-scrollbar {
+    width: 10px;
+  }
+
+  ::-webkit-scrollbar-track {
+    background: #f1f1f1;
+  }
+
+  /* Handle */
+::-webkit-scrollbar-thumb {
+    background: #888;
+  }
+  
+  /* Handle on hover */
+  ::-webkit-scrollbar-thumb:hover {
+    background: #555;
+  }

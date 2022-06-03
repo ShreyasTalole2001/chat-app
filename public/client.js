@@ -4,6 +4,10 @@ let namee;
 
 let textarea = document.querySelector('#textarea')
 let messageArea = document.querySelector('.message--area')
+let notificationArea = document.querySelector('.notification--area')
+
+
+
 
 do{
     namee = prompt("Please enter your name: ")
@@ -48,11 +52,17 @@ function appendMessage(msg, type){
 
 }
 
+// function showNotification(noti) {
+//     notificationArea.innerHTML = noti
+// }
+
 // Receive Message
 socket.on('message', (msg) => {
     appendMessage(msg, 'incomming')
     scrollToBottom()
 })
+
+
 
 
 function scrollToBottom() {
